@@ -128,6 +128,36 @@ nav-header{
   height: 25px;
 }
 
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+.log-container{
+  padding: 16px;
+}
+
+.log-container button{
+  display: flex;
+  float: right;
+}
+
+.itemform-content{
+  width: 90%;
+  margin: 0% auto 15% auto;
+}
 
 
 

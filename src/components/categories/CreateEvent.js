@@ -1,9 +1,11 @@
 import React from 'react'
+import image from "../../assets/user.png"
 
 const CreateEvent = () => {
   return (
     <div>
-      Create Event
+      {/* <form className="itemform-content"></form> */}
+      
     </div>
   )
 }
