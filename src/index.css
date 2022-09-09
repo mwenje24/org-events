@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:manjari, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,158 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.page-headings{
+  color: #244377;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.page-headings button, .log-container button{
+  display: flex;
+  float: right;
+}
+nav-header{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+.nav-header-link {
+  display: inline-block;
+  padding: 1.2rem 1rem;
+  color:#244377;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-header-link:hover{
+  color: rgb(121, 6, 6);
+  transition: .1s;
+  -ms-transform-origin-x:scale(3.3);
+  cursor: pointer;
+}
+.nav-header-link img{
+  width: 50px;
+  height: 30px;
+}
+.nav-header .search-bar{
+  display: flex;
+  float: right;
+}
+.nav-header .search-bar input[type=text]{
+  width: 15rem;
+  border-radius: 5px;
+  text-align: center;
+  border-color: #d0d1d1;
+}
+
+.landing-page .welcome-image{
+  width: 100%;
+  height:40vh;
+  background-image: url('https://aaieiinternational.com/wp-content/uploads/2021/05/global-market-research-conferences-2020.png');
+  background-size: cover;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+.landing-page .welcome-text{
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* opacity: 1; */
+}
+.event-cat{
+  width: 100%;
+}
+.event-categories{
+  height: 8vh;
+  background-color: #cbd1d1;
+  /* padding: 20px; */
+  margin: 5px;
+  width: 24%;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 7px;
+}
+.event-categories span{
+  text-align: center;
+  margin: auto;
+}
+.cards{
+  width: 100%;
+}
+.popular-card{
+  height: 32vh;
+  width: 20%;
+  margin-top: 1rem;
+  display: inline-block;
+  /* margin: 0.1rem; */
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.popular-card img{
+  width: 100%;
+  margin: auto;
+  height: 20vh;
+  background-size: cover;
+}
+/* .popular-card 
+  .card-body h6{
+    display: flex;
+    float: left;
+    font-size: 18px;
+}
+.popular-card 
+  .card-body p span, h6 span{
+    display: flex;
+    float: right;
+    font-size: 18px;
+} */
+.popular-card 
+  .card-body h6 span .btn{
+  margin-left: 0.6rem;
+  height: 25px;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+  body{
+    margin-top: 25vh;
+  }
+  .popular-card{
+  height: 44vh;
+  }
+  .popular-card {
+  width: 50%;
+  }
+  .nav-header{
+    position: fixed;
+  }
+  .nav-header-link{
+    padding: 0.5rem 0.6rem;
+    display:inline-block;
+    width: 33%;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .nav-header-link img{
+    clear: right;
+  }
+  .nav-header .search-bar{
+    width: 100%;
+    display: flex;
+    float: left;
+  }
+  .nav-header 
+  .search-bar 
+  input[type=text]{
+    width: 100%;
+  }
 }
