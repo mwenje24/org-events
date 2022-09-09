@@ -166,7 +166,7 @@ img.avatar {
     margin-top: 25vh;
   }
   .popular-card{
-  height: 44vh;
+  height: 50vh;
   }
   .popular-card {
   width: 50%;
@@ -193,5 +193,17 @@ img.avatar {
   .search-bar 
   input[type=text]{
     width: 100%;
+  }
+  .modal-content{
+    width:90%
+  }
+  .event-categories{
+    width: 45.5%;
+  }
+  .popular-card img{
+    width: 100%;
+    margin: auto;
+    height: 32vh;
+    background-size: cover;
   }
 }

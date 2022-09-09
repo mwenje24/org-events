@@ -20,7 +20,7 @@ const CreateAccount = () => {
           </div>
 
           <div className="log-container">
-            <span className="psw">Don't have an Account <Link to="/create-account" className='nav-header-link'> Sign Up </Link></span>
+            <span className="psw">have an account? <Link to="/login" className='nav-header-link'> Login </Link></span>
           </div>
         </form>
         </>

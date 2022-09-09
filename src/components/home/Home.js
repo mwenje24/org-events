@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import EventCard from '../EventCard'
+import Trending from '../trending/Trending'
 
 const Home = () => {
     // const [event, setEvent] = useState(null);
@@ -34,13 +34,7 @@ const Home = () => {
             <div className='event-categories'><span>Hangouts/Chill</span></div>
         </div>
      </div>
-     <div className='container trends mt-3' id='trends'>
-        <span className='page-headings'>Trending Events</span>
-        <div className="cards">
-            <EventCard />
-            <EventCard />
-        </div>
-     </div>
+     <Trending />
     </>
   )
 }
