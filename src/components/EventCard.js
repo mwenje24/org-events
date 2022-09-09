@@ -1,15 +1,15 @@
 import React from 'react'
-import pic from '../assets/logo192.png'
 
-const EventCard = () => {
+const EventCard = ({image, title, location, date, time, fee}) => {
   return (
     <>
       <div className='popular-card'>
-          <img src={pic} className="card-img-top" alt="..."/>
+          <img src={image} className="card-img-top" alt="..."/>
           <div className="card-body">
-            <h6 className="card-title">Event Title <span className='ms-3'>charges</span></h6>
-            <h6 className="card-text">location</h6>
-            <h6 className="card-text">date:day<span className='btn btn-sm btn-secondary ms-3'>Attend</span></h6>
+            <p className="card-title title mt-2">Theme: {title }</p>
+            <p className="card-text">Location: {location}</p>
+            <p className="card-text w-100 title-gradient text-light">👉 {date} : {time}</p>
+            <p className='text-danger ms-4'>fee: $ {fee}<button className='btn btn-sm btn-secondary ms-3'>Attend</button></p>
           </div>
       </div>
     </>

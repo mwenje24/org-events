@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.title{
+  color: #244377;
+}
+.title-gradient{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.493), rgb(161, 213, 236));
+}
 .page-headings{
   color: #244377;
   font-size: 1.2rem;
@@ -96,8 +102,9 @@ nav-header{
   width: 100%;
 }
 .popular-card{
-  height: 32vh;
+  height: 40vh;
   width: 20%;
+  padding: 10px;
   margin-top: 1rem;
   display: inline-block;
   /* margin: 0.1rem; */
@@ -110,21 +117,17 @@ nav-header{
   height: 20vh;
   background-size: cover;
 }
-/* .popular-card 
-  .card-body h6{
+.popular-card 
+  .card-body p{
     display: flex;
-    float: left;
-    font-size: 18px;
+    font-size: 14px;
 }
+
 .popular-card 
-  .card-body p span, h6 span{
-    display: flex;
-    float: right;
-    font-size: 18px;
-} */
-.popular-card 
-  .card-body h6 span .btn{
+  .card-body p button{
   margin-left: 0.6rem;
+  display: flex; 
+  float: left;
   height: 25px;
 }
 
@@ -166,7 +169,7 @@ img.avatar {
     margin-top: 25vh;
   }
   .popular-card{
-  height: 50vh;
+  height: 54vh;
   }
   .popular-card {
   width: 50%;

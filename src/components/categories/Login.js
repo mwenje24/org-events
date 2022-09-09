@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Login = () => {
   return (
     <div>
-      <form className="modal-content animate" onSubmit="">
+      <form className="modal-content animate">
           <div className="imgcontainer">
             <img src={image} alt="Avatar" className="avatar"/>
           </div>

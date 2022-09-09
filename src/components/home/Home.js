@@ -1,17 +1,6 @@
-import React, {useState, useEffect} from 'react'
 import Trending from '../trending/Trending'
 
 const Home = () => {
-    // const [event, setEvent] = useState(null);
-  
-    // useEffect(() => {
-    //   fetch(`http://localhost:9292/events`)
-    //     .then((r) => r.json())
-    //     // .then((event) => setEvent(event));
-    //     .then((event) => console.log(event));
-    // }, []);
-  
-    // if (!event) return <h2>Loading events data...</h2>;
   return (
     <>
       <div className='landing-page'>

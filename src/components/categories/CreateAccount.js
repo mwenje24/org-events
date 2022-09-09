@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const CreateAccount = () => {
     return (
         <>
-          <form className="modal-content animate" onSubmit="">
+          <form className="modal-content animate">
           <span className='page-headings'>create account</span>
           <div className="log-container">
           <label className='form-label mt-4'><b>organiser name</b></label>
