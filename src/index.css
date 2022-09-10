@@ -102,7 +102,7 @@ nav-header{
   width: 100%;
 }
 .popular-card{
-  height: 40vh;
+  /* height: 40vh; */
   width: 20%;
   padding: 10px;
   margin-top: 1rem;
@@ -168,9 +168,9 @@ img.avatar {
   body{
     margin-top: 25vh;
   }
-  .popular-card{
+  /* .popular-card{
   height: 54vh;
-  }
+  } */
   .popular-card {
   width: 50%;
   }

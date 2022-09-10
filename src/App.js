@@ -1,4 +1,4 @@
-import { createEvent } from '@testing-library/react';
+// import { createEvent } from '@testing-library/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Categories from './components/categories/Categories';
@@ -8,7 +8,7 @@ import Home from './components/home/Home';
 import Login from './components/categories/Login';
 import CreateAccount from './components/categories/CreateAccount';
 import Trending from './components/trending/Trending';
-
+import MyEvents from './components/trending/MyEvents';
 
 
 
@@ -24,6 +24,7 @@ function App() {
         <Route exact path="/login" element={<Login />}></Route>
         <Route exact path="/create-event" element={<CreateEvent />}></Route>
         <Route exact path="/create-account" element={<CreateAccount />}></Route>
+        <Route exact path="/myevents" element={<MyEvents />}></Route>
         </Routes>
       </Router>
     </div>
