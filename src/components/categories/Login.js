@@ -36,7 +36,7 @@ const Login = () => {
         // console.log(verified)
         if(verified){
           if(password === verified.password){
-            navigate('/myevents');
+            navigate('/myevents'+ '/'+ verified.id, {state: {userId : verified.id}});
           }
           else{
             alert('Wrong password')

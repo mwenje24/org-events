@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/login" element={<Login />}></Route>
         <Route exact path="/create-event" element={<CreateEvent />}></Route>
         <Route exact path="/create-account" element={<CreateAccount />}></Route>
-        <Route exact path="/myevents" element={<MyEvents />}></Route>
+        <Route exact path="/myevents/:userId" element={<MyEvents />}></Route>
         </Routes>
       </Router>
     </div>
