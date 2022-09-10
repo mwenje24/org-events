@@ -12,8 +12,6 @@ const Trending = () => {
         // .then((event) => console.log(event));
     }, []);
 
-    
-  
     if (!event) return <h2>Loading events data...</h2>;
   return (
     <>
@@ -22,6 +20,7 @@ const Trending = () => {
         <div className="cards">
             {event.map(item =>(
               <EventCard key={item.id}
+                event_id={item.event_id}
                 image={item.image}
                 title={item.title}
                 location={item.location}

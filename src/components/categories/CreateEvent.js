@@ -1,9 +1,12 @@
 import React, {useState} from 'react'
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 
 
-let owner_id = 1
+// let owner_id = 1
 const CreateEvent = () => {
+  let {userId} = useParams()
+  // console.log(userId)
+
   const [formData, setFormData] = useState({
     title: "",
     category: "",
@@ -16,11 +19,11 @@ const CreateEvent = () => {
     image: "",
   });
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  function handleAdminAccess(){
-    navigate('/myevents');
-  }
+  // function moveToSummary(){
+  //   navigate('/myevents');
+  // }
 
   function handleChange(event) {
     setFormData({
@@ -35,7 +38,7 @@ const CreateEvent = () => {
       category: formData.category,
       location: formData.location,
       time: formData.time,
-      event_owner_id: owner_id,
+      event_owner_id: userId,
       description: formData.description,
       fee: formData.fee,
       date: formData.date,
@@ -54,7 +57,7 @@ const CreateEvent = () => {
   return (
     <div>
       {/* <form className="itemform-content"></form> */}
-      <button className='btn btn-sm btn-secondary mx-3 px-4' onClick={handleAdminAccess}> <span className='fs-5'>&laquo;</span> Back to Summary</button>
+      {/* <button className='btn btn-sm btn-secondary mx-3 px-4' onClick={moveToSummary}> <span className='fs-5'>&laquo;</span> Back to Summary</button> */}
       <form className="modal-content animate" onSubmit={handleSubmit}>
         <span className='page-headings'>create new event</span>
         <div className="log-container">

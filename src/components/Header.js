@@ -9,7 +9,7 @@ const Header = () => {
         <Link to="/" className='nav-header-link'> Home </Link>
         {/* <Link to="/categories" className='nav-header-link'> categories </Link> */}
         <Link to="/trends" className='nav-header-link'> trends </Link>
-        <Link to="/login" className='nav-header-link'> create event </Link>
+        <Link to="/login" className='nav-header-link'> access events </Link>
         <form className='nav-header-link search-bar'>
           <input className='form-control' type='text' name='search' placeholder='search Event...'/>
         </form>

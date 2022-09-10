@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/trends" element={<Trending />}></Route>
         <Route exact path="/categories" element={<Categories />}></Route>
         <Route exact path="/login" element={<Login />}></Route>
-        <Route exact path="/create-event" element={<CreateEvent />}></Route>
+        <Route exact path="/create-event/:userId" element={<CreateEvent />}></Route>
         <Route exact path="/create-account" element={<CreateAccount />}></Route>
         <Route exact path="/myevents/:userId" element={<MyEvents />}></Route>
         </Routes>

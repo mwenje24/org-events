@@ -1,6 +1,12 @@
 import Trending from '../trending/Trending'
+import {Link, useNavigate} from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  function filterCat({criteria}){
+    navigate('/categories', {state: {criteria : criteria}});
+  }
   return (
     <>
       <div className='landing-page'>
@@ -14,13 +20,13 @@ const Home = () => {
      <div className='container event-cat'>
         <span className='page-headings'>Event Categories</span>
         <div className='row'>
-            <div className='event-categories'><span>Sports</span></div>
-            <div className='event-categories'><span>Bussiness</span></div>
-            <div className='event-categories'><span>Concerts</span></div>
-            <div className='event-categories'><span>Travel</span></div>
-            <div className='event-categories'><span>Educational</span></div>
-            <div className='event-categories'><span>Talk Shows</span></div>
-            <div className='event-categories'><span>Hangouts/Chill</span></div>
+            <div className='event-categories btn' onClick={filterCat}><span>Sports</span></div>
+            <div className='event-categories btn' onClick={filterCat}><span>Bussiness</span></div>
+            <div className='event-categories btn' onClick={filterCat}><span>Concerts</span></div>
+            <div className='event-categories btn' onClick={filterCat}><span>Travel</span></div>
+            <div className='event-categories btn' onClick={filterCat}><span>Educational</span></div>
+            <div className='event-categories btn' onClick={filterCat}><span>Talk Shows</span></div>
+            <div className='event-categories btn' onClick={filterCat}><span>Hangouts/Chill</span></div>
         </div>
      </div>
      <Trending />

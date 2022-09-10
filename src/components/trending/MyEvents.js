@@ -1,10 +1,13 @@
 import React, {useEffect, useState} from 'react'
-import { useParams } from "react-router-dom";
-import EventCard from "../EventCard"
+import { useParams, useNavigate } from "react-router-dom";
+import EventCard from "./MyEventCard"
 
 const MyEvents = () => {
   let {userId} = useParams()
   const [event, setEvent] = useState(null);
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     fetch(`http://localhost:9292/events`)
       .then((r) => r.json())
@@ -16,11 +19,19 @@ const MyEvents = () => {
   const userEvents = event.filter((item) =>{
     return item.event_owner_id === parseInt(userId)
   })
+  // if (!userEvents) return <h2>You have no events yet...</h2>;
+
+  function moveToCreateEvent(){
+    navigate('/create-event'+ '/'+ userId, {state: {userId : userId}})
+  }
 
   return (
     <div>
       {/* {userId} */}
-      <div><span className='page-headings'>My Events Summary</span></div>
+      <div>
+        <span className='page-headings'>My Events Summary</span>
+        <button className='btn btn-sm btn-secondary mx-5 px-3' onClick={moveToCreateEvent}>Create New Event</button>
+      </div>
       <div>
         {userEvents.map(item =>(
           <EventCard key={item.id}
@@ -29,7 +40,8 @@ const MyEvents = () => {
             location={item.location}
             date={item.date}
             time={item.time}
-            fee={item.fee}/>
+            fee={item.fee}
+            description={item.description}/>
         ))}
       </div>
       
