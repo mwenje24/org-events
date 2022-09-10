@@ -28,8 +28,10 @@ const CreateAccount = () => {
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({newOrganizer}),
+        body: JSON.stringify(newOrganizer),
     })
+    .then((r) => r.json())
+    // .then((data) => console.log(data))
   }
 
     return (

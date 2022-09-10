@@ -11,6 +11,8 @@ const Trending = () => {
         .then((event) => setEvent(event));
         // .then((event) => console.log(event));
     }, []);
+
+    
   
     if (!event) return <h2>Loading events data...</h2>;
   return (

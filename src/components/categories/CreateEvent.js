@@ -41,13 +41,13 @@ const CreateEvent = () => {
       date: formData.date,
       image: formData.image
     }
-    console.log(newEvents)
+    // console.log(newEvents)
     fetch("http://localhost:9292/events", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({newEvents}),
+        body: JSON.stringify(newEvents),
     })
   }
 
