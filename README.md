@@ -8,14 +8,14 @@ Org Events is a platform to automate and consolidate all the planning and advert
 * external backend >> {git clone  https://github.com/mwenje24/org-events-db-}
 The project is straight foward. The user will have acess to all the files in the project ones its forked from gitbub. all the files and pictures that were used have been embeded together with the folders.
 ## Live link
-<!-- https://mwenje24.github.io// -->
+{https://mwenje24.github.io/org-events}
 
 ## Technologies Used
-HTML - it has been used to create the stucture of the application
-CSS - it has been used to style the application
-JavaScript - it has been used to manipulate the events on the platform
-ReactJS - has been used to used to structure the applications front end
-ruby sinatra - has been used to create the backend
+* HTML - it has been used to create the stucture of the application
+* CSS - it has been used to style the application
+* JavaScript - it has been used to manipulate the events on the platform
+* ReactJS - has been used to used to structure the applications front end
+* ruby sinatra - has been used to create the backend
 
 ## Support and contact details
 email: mwenje24@gmail.com
