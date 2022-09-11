@@ -5,9 +5,8 @@ Org Events is a platform to automate and consolidate all the planning and advert
 ## Setup/Installation Requirements
 * Clone the repos;
 {git clone https://github.com/mwenje24/org-events}
-external backend >> {git clone  https://github.com/mwenje24/org-events-db-}
+* external backend >> {git clone  https://github.com/mwenje24/org-events-db-}
 The project is straight foward. The user will have acess to all the files in the project ones its forked from gitbub. all the files and pictures that were used have been embeded together with the folders.
-The Api used can be access using the provided link https://job-vacancies.p.rapidapi.com/vacancies/jora
 ## Live link
 <!-- https://mwenje24.github.io// -->
 
