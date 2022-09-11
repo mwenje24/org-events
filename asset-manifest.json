@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/org-events/static/css/main.5329ee7f.css",
+    "main.js": "/org-events/static/js/main.3ce7590c.js",
+    "static/media/user.png": "/org-events/static/media/user.557587208eb9e232f2ca.png",
+    "index.html": "/org-events/index.html",
+    "main.5329ee7f.css.map": "/org-events/static/css/main.5329ee7f.css.map",
+    "main.3ce7590c.js.map": "/org-events/static/js/main.3ce7590c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5329ee7f.css",
+    "static/js/main.3ce7590c.js"
+  ]
+}
