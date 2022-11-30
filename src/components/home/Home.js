@@ -20,13 +20,13 @@ const Home = () => {
      <div className='container event-cat'>
         <span className='page-headings'>Event Categories</span>
         <div className='row'>
-            <div className='event-categories btn' onClick={filterCat}><span>Sports</span></div>
-            <div className='event-categories btn' onClick={filterCat}><span>Bussiness</span></div>
-            <div className='event-categories btn' onClick={filterCat}><span>Concerts</span></div>
-            <div className='event-categories btn' onClick={filterCat}><span>Travel</span></div>
-            <div className='event-categories btn' onClick={filterCat}><span>Educational</span></div>
-            <div className='event-categories btn' onClick={filterCat}><span>Talk Shows</span></div>
-            <div className='event-categories btn' onClick={filterCat}><span>Hangouts/Chill</span></div>
+            <div className='event-categories' onClick={filterCat}><span>Sports</span></div>
+            <div className='event-categories' onClick={filterCat}><span>Bussiness</span></div>
+            <div className='event-categories' onClick={filterCat}><span>Concerts</span></div>
+            <div className='event-categories' onClick={filterCat}><span>Travel</span></div>
+            <div className='event-categories' onClick={filterCat}><span>Educational</span></div>
+            <div className='event-categories' onClick={filterCat}><span>Talk Shows</span></div>
+            <div className='event-categories' onClick={filterCat}><span>Hangouts/Chill</span></div>
         </div>
      </div>
      <Trending />

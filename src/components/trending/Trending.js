@@ -6,7 +6,7 @@ const Trending = () => {
   const [event, setEvent] = useState(null);
   
     useEffect(() => {
-      fetch(`http://localhost:9292/events`)
+      fetch(`/events`)
         .then((r) => r.json())
         .then((event) => setEvent(event));
         // .then((event) => console.log(event));
